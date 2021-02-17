@@ -2,4 +2,6 @@
     <string name="app_name">Arvin Water Bill</string>
     <string name="hello">Hello</string>
     <string name="please_enter_your_account_number_below">please enter your Account Number below.</string>
+    <string name="acc_num">ACCOUNT NUMBER</string>
+    <string name="start">Start</string>
 </resources>

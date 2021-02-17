@@ -65,9 +65,9 @@
                     android:id="@+id/account_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/acc_num"
                     android:textColor="#363A43"
                     android:textColorHint="#7A8089"
+                    android:text="@string/entered_num"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -80,7 +80,7 @@
                     android:id="@+id/account_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/acc_name"
+                   android:text="@string/input_name"
                     android:textColor="#363A43"
                     android:textColorHint="#7A8089"
                     />

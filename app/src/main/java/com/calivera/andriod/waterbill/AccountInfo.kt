@@ -9,12 +9,21 @@ object AccountInfo {
         val accountList = ArrayList<FakeAccounts>()
 
         val acct1 = FakeAccounts(
+            1,
             "Smith12",
             "Mr.Smith",
 
         )
+
         accountList.add(acct1)
 
+        val acct2 = FakeAccounts(
+            2,
+            "joe12",
+            "Mr.joe",
+
+            )
+        accountList.add(acct2)
         return accountList
     }
 

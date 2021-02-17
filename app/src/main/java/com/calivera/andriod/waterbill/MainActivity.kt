@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private var aAccountList : ArrayList<FakeAccounts>? = null
+    private var aCurrentPosition: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,10 +27,11 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             }else{
-               val accNum = account_number.text.toString()
-                val accNam = account_name.text.toString()
+               val accNumber = account_number.text.toString()
+               val accName = account_name.text.toString()
+                checkInfo(accNumber,accName)
 
-                checkInfo(accNum, accNam)
+
             }
         }
 
@@ -37,6 +39,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkInfo(number: String, name:String) {
-        TODO("check if the name is in the data base")
+        val data = aAccountList!![aCurrentPosition]
+        
+            if (number == data.AccountNum) {
+                println("in the system")
+            } else {
+                println("not in the system")
+            }
+
+
     }
+
+
 }
